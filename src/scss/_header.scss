@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 header{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.822);
     width: 60%;
     margin: 0 auto;
     display: flex;
@@ -15,6 +15,7 @@ header{
     right: 0;
     left: 0;
     top: 0;
+    z-index: 1;
     nav{
         width: 65%;
         display: flex;

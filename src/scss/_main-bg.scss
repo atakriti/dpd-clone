@@ -1,9 +1,8 @@
 main{
     width: 60%;
     margin: 0 auto;
-    border: 2px orange solid;
+    // border: 2px orange solid;
     .video{
-        border: 1px red solid;
         position: relative;
         video{
             width: 100%;
@@ -54,7 +53,8 @@ main{
                     margin-bottom: 4%;
                     input{
                         width: 100%;  
-                        font-size: $font-size;                    
+                        font-size: $font-size;  
+                        padding: 1%;                  
                     }
                     a{
                         background-color: rgba(0, 0, 0, 0.418);
