@@ -1,12 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>DPD-Clone</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="logo"><img src="./images/logo.svg" alt="" /></a>
+        <ul>
+          <li><a href="#">Sending parcels</a></li>
+          <li><a href="#">Receiving parcels</a></li>
+          <li><a href="#">Returning parcels</a></li>
+          <li><a href="#">myDPD.</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="#" class="search"
+          ><img src="./images/magnifier.svg" alt=""
+        /></a>
+        <a href="#" class="menu"
+          ><img src="./images/burger-menu.svg" alt=""
+        /></a>
+      </div>
+    </header>
+    <!-- ============== main video ============ -->
+    <main>
+      <!-- ================== Video =============== -->
+      <div class="video">
+        <video autoplay loop muted>
+          <source src="./images/main-bg.mp4" />
+        </video>
+        <div class="video-text">
+          <p>No more missed parcels</p>
+          <h1>give us your deposit okay</h1>
+          <a href="#"
+            >Provide a deposit okay
+            <span><i class="fa-solid fa-angle-right"></i></span
+          ></a>
+        </div>
+        <div class="form-video">
+          <div>
+            <p>Where is my parcel?</p>
+            <form action="">
+              <input type="text" name="search" id="1" />
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </form>
+            <a href="#"
+              >Search with parcel reference
+              <span><i class="fa-solid fa-angle-right"></i></span
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- ================== six-boxes =============== -->
+      <div class="six-boxes">
+        <!-- one -->
+        <div class="box">
+         <div class="box-text">
+              <h2>Send parcel now</h2>
+              <p>
+                Ship parcels simply and conveniently. Drop them off at a parcel shop
+                or have them picked up.
+              </p>
+         </div>
+          <span><b> From 4.00 €</b><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+        <!-- two -->
+        <div class="box">
+            <div class="box-text">
+                <h2>Offer for business customers</h2>
+                <p>We will be happy to provide you with a highly competitive offer for your parcel shipping, of course without obligation.</p>
+            </div>
+            <span>More details</span>
+        </div>
+        <!-- Three -->
+        <div class="box">
+          <div class="box-text">
+                <h2>Log in / register </h2>
+                <p>Send, receive and return parcels with myDPD.</p>
+          </div>
+            <span><b>To myDPD</b><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+        <!-- Four -->
+        <div class="box">
+           <div class="box-text">
+                <h2>Find parcel shop</h2>
+                <p>Find a nearby Pickup parcelshop</p>
+           </div>
+            <form action="">
+                <input placeholder="Postcode, town, address" type="text" name="text" id="2">
+                <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+            </form>
+        </div>
+        <!-- Five -->
+        <div class="box">
+            <div class="box-text">
+                <h2>Support</h2>
+                <p>How can we help you?</p>
+            </div>
+            <span><b>Help and FAQs</b><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+        <!-- Six -->
+        <div class="box">
+           <div class="box-text">
+                <h2>dpd DRIVER'S RADIO</h2>
+                <p>Best sounds for on the road. <br>            
+                In cooperation with DPD Germany.
+                </p>
+           </div>
+            <span><b>Listen now</b><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+      </div>
+      <!-- ============= middle long text ================= -->
+      <div class="middle-long-text">
+          <p>DPD is your partner when it comes to parcel shipping - within Germany and internationally. Thanks to our 7,500 parcel shops we are always just around the corner. Send a parcel now or request a personal offer, of course without commitment.
+        </p>
+      </div>
+      <!-- ==================== sending-receiving ============= -->
+      <div class="sending-receiving">
+         <div class="sending-receiving-text">
+              <p>Sending, receiving and returning parcels - now simpler than ever</p>
+         </div>
+          <div class="sending-receiving-container">
+              <div class="sending-receiving-left">
+                  <!-- one -->
+                <div>
+                    <a href="#"><img src="./images/1.svg" alt=""></a>
+                    <span> 
+                        <h2>Sending parcels</h2>
+                        <p>Whether your parcels are large or small, shipped privately or for business purposes, DPD always has the ideal solution for both domestic and international shipping.</p>
+                    </span>
+                  
+                </div>
+                <!-- two -->
+                <div>
+                    <a href="#"><img src="./images/2.svg" alt=""></a>
+                    <span>
+                        <h2>Receiving parcels </h2>
+                        <p>Won't be at home when we arrive? No problem. Redirect your parcels or register a delivery preference: deposit okay, delivery to a parcel shop or to a parcel box.</p>
+                    </span>
+                </div>
+                <!-- three -->
+                <div>
+                    <a href="#"><img src="./images/3.svg" alt=""></a>
+                    <span>
+                        <h2>Returning parcels </h2>
+                    <p>The parcel has to be sent back? As a shipper you can use our returns management to offer your customers an efficient and individual service for their returns. It's child play with our returns at the tap of a finger.</p>
+                    </span>
+                </div>
+              </div>
+              <div class="sending-receiving-right">
+                <a href="#"><img src="./images/4.jpg" alt=""></a>
+                <button>More details</button>
+              </div>
+          </div>
+      </div>
+    </main>
+  </body>
 </html>
