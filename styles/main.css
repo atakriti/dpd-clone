@@ -846,10 +846,13 @@ footer .en a:hover {
     justify-content: space-between;
   }
   header div a img {
-    width: 3.5vw;
+    width: 4.5vw;
   }
   header div a:nth-child(2) {
     display: block;
+  }
+  header div a:nth-child(1) {
+    display: none;
   }
 
   main {
@@ -1120,6 +1123,7 @@ footer .en a:hover {
   footer {
     width: 100%;
     margin: 0;
+    padding: 3%;
   }
   footer section ul {
     width: 80%;
