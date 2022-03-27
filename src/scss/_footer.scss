@@ -3,6 +3,7 @@ footer{
     margin: 0 auto;
     background-color: $footer-color;
     padding: 1%;
+   
     section{
    
     display: flex;
@@ -75,5 +76,48 @@ footer{
     hr{
         margin: 1% 0;
     }
-   
+    // ================= FOOTER Bottom ===================
+    
+   .footer-bottom{
+       display: flex;
+       justify-content: space-between;
+       .footer-logo{
+           a{
+            font-size: calc($font-size - 0.2vw);
+            text-decoration: none;
+            color: $gray;
+            display: flex;
+            align-items: center;
+               img{
+                   width: 3vw;
+               }
+               
+
+           }
+       }
+       div{
+           a{
+            font-size: calc($font-size - 0.2vw);
+            text-decoration: none;
+            color: $gray;
+           }
+           span{
+               font-size: $font-size;
+               color: $gray;
+           }
+       }
+   }
+//    ================== English =============
+.en{
+    width: 100%;
+    text-align: right;
+    a{
+        text-decoration: none;
+        font-size: calc($font-size - 0.1vw);
+        color: black;
+    }
+    i{
+        margin-left: 1%;
+    }
+}
 }
