@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 header{
     background-color: rgba(255, 255, 255, 0.884);
@@ -48,9 +49,7 @@ header{
                     font-size:$font-size;
                     color: black;
                 }
-                &:nth-child(n+1):nth-child(-n+3){
-                 flex-grow: 1;
-                }
+               
                 &:hover{
                     border-bottom: 0.1vw $red solid;                    
                     a{
@@ -64,7 +63,7 @@ header{
     div{
         width: 6%;
         display: flex;
-        justify-content: space-between;
+         justify-content: flex-end;
         align-items: center;
         a{
             img{
@@ -74,7 +73,9 @@ header{
               }
               
             }
-            
+            &:nth-child(2){
+                display: none;
+             }
         }
     }
 }

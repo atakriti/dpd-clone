@@ -17,24 +17,34 @@
       <nav>
         <a href="#" class="logo"><img src="./images/logo.svg" alt="" /></a>
         <ul>
-          <li><a href="#">Sending parcels</a></li>
-          <li><a href="#">Receiving parcels</a></li>
-          <li><a href="#">Returning parcels</a></li>
-          <li><a href="#">myDPD.</a></li>
-          <li><a href="#">Support</a></li>
+          <li><a href="#sendingId">Sending parcels</a></li>
+          <li><a href="#shopsId">Online Shops</a></li>
+          <li><a href="#relatedId">Related News</a></li>
+          <li><a href="#aboutId">About</a></li>
         </ul>
       </nav>
       <div>
         <a href="#" class="search"
           ><img src="./images/magnifier.svg" alt=""
         /></a>
-        <a href="#" class="menu"
+        <a onclick="menu()" href="#" class="menu"
           ><img src="./images/burger-menu.svg" alt=""
         /></a>
       </div>
     </header>
+    
     <!-- ============== main video ============ -->
-    <main>
+    <main onclick="main()">
+      <!-- ============ menu mobile =============== -->
+    <div id="list" class="menu-mobile">
+      <ul>
+        <li><a onclick="listBtn()" href="#sendingId">Sending parcels</a></li>
+        <li><a onclick="listBtn()" href="#shopsId">Online Shops</a></li>
+        <li><a onclick="listBtn()" href="#relatedId">Related News</a></li>
+        <li><a onclick="listBtn()" href="#aboutId">About</a></li>
+        <li><a onclick="back()" href="#">Back to main</a></li>
+      </ul>
+    </div>
       <!-- ================== Video =============== -->
       <div class="video">
         <video autoplay loop muted>
@@ -144,7 +154,7 @@
         </p>
       </div>
       <!-- ==================== sending-receiving ============= -->
-      <div class="sending-receiving">
+      <div id="sendingId" class="sending-receiving">
         <div class="sending-receiving-text">
           <p>
             Sending, receiving and returning parcels - now simpler than ever
@@ -216,7 +226,7 @@
         </div>
       </div>
       <!-- ================= online shops ============ -->
-      <div class="online-shops">
+      <div id="shopsId" class="online-shops">
         <p>For online shops and e-commerce businesses</p>
         <div class="online-shops-container">
           <!-- the first one -->
@@ -256,7 +266,7 @@
         <a href="#"><img src="./images/7.jpg" alt=""></a>
       </div>
       <!-- =============== Related news ============= -->
-      <div class="related-news">
+      <div id="relatedId" class="related-news">
         <!-- top -->
         <div class="related-news-top">
           <h2>Related News</h2>
@@ -291,7 +301,7 @@
         <button>Show more</button>
       </div>
       <!-- ================ what customer say ============= -->
-      <div class="customer">
+      <div  class="customer">
         <div class="custuomer-container">
           <!-- one -->
           <div>
@@ -343,7 +353,7 @@
       </div>
     </main>
     <!-- =================== FOOTER ===================== -->
-    <footer>
+    <footer id="aboutId">
      <section>
       <ul>
         <!-- one -->
@@ -454,5 +464,6 @@
         <a href="#">English<i class="fa-solid fa-angle-down"></i></a>
       </div>
     </footer>
+    <script src="./Javascript/main.js"></script>
   </body>
 </html>
