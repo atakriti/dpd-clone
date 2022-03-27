@@ -426,4 +426,91 @@ main {
         font-size: $font-size;
     }
   }
+
+  // ===================== Customer ===============
+  .customer{
+    overflow: scroll;
+    background-color: $light-gray;
+    padding: 3%;
+    margin: 5% 0;
+    &::-webkit-scrollbar{
+      height: 0.5vw;
+      width: 0;
+       
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: $gray;
+    border-radius: 1vw;
+  }
+
+    .custuomer-container{
+      display: flex;
+      width: 130%;
+      white-space: nowrap;
+      div{
+        width: 20%;
+        white-space: normal;
+        margin-right: 4%;
+        a{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 2%;
+          img{
+             width: 5vw;
+          }
+        }
+        p{
+          font-size: calc($font-size - 0.1vw);
+        }
+      }
+    }
+  }
+
+  // =============== INFOS =====================
+  .infos{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 5% 0;
+    div{
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1%;
+      height: 8vw;
+      h2{
+        font-size: calc($font-size + 0.3vw);    
+        font-weight: lighter;    
+        color: white;
+      }
+      p{
+        font-size: $font-size;
+        color: white;
+
+      }
+      a{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: $font-size;
+        text-decoration: none;
+        color: white;
+
+
+      }
+      &:nth-child(1){
+        background-color: $red;
+      }
+      &:nth-child(2){
+        background-color: $dark-red;
+      }
+      &:nth-child(3){
+        background-color: $gray;
+      }
+
+    }
+  }
 }

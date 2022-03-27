@@ -1,4 +1,24 @@
 @import "./var";
 @import "./header";
 @import "./main-bg";
-@import "./main-page" 
+@import "./main-page" ;
+@import "./footer" ;
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+    src: url(../font/SourceSansPro-Italic.ttf);
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+
+::-webkit-scrollbar{
+    height: 0.5vw;
+    width: 0.5vw;
+     
+}
+::-webkit-scrollbar-thumb{
+  background-color: $gray;
+  border-radius: 1vw;
+}
