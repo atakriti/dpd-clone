@@ -114,6 +114,7 @@ main {
     .sending-receiving-container {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       .sending-receiving-left {
         width: 45%;
         display: flex;
@@ -202,6 +203,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     margin: 5% 0;
     a {
       width: 48%;
@@ -314,6 +316,7 @@ main {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap-reverse;
       margin: 4% 0;
       div{
           width: 48%;
@@ -398,8 +401,9 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         margin: 3% 0;
-        div{
+        .related-news-middle-container{
             width: 48%;
             display: flex;
             justify-content: space-between;
@@ -408,6 +412,7 @@ main {
                 padding: 2%;
                 display: flex;
                 flex-direction: column;
+                justify-content: space-between;
                 div{
                     display: flex;
                     flex-direction: column;
@@ -427,6 +432,7 @@ main {
                     align-items: center;
                     text-decoration: none;
                     width: 100%;
+                    font-size: $font-size;
                     &:hover{
                       opacity: 0.7;
                   }
@@ -521,6 +527,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    flex-wrap: wrap;
     margin: 5% 0;
     div{
       width: 32%;

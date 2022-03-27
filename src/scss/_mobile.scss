@@ -1,0 +1,387 @@
+@media only screen and (max-width:800px) {
+    // =============== header ==============
+    header{
+        width: 100%;
+        margin: 0;
+        padding: 2% 1.7%;
+        nav{
+            width: 85%;
+            .logo{
+                img{
+                    width: calc($font-size-mobile + 7vw);
+                }
+            }
+            ul{
+                li{
+                    a{
+                        font-size: calc($font-size-mobile - 0.5vw);
+                    }
+                }
+            }
+        }
+        // ============= search and menu ===========
+        div{
+            width: 10%;
+            a{
+                img{
+                    width: calc($font-size-mobile + 1vw);
+                }
+            }
+        }
+    }
+    // =================== Video bg =============
+    main{
+        width: 100%;
+        margin: 0;
+        .video{
+            .video-text{
+                p{
+                    font-size:calc($font-size-mobile + 0.8vw);
+                }
+                h1{
+                    font-size:calc($font-size-mobile + 1vw);
+
+                }
+                a{
+                    font-size: $font-size-mobile;
+                    span{
+                    font-size: $font-size-mobile;
+                    }
+                }
+            }
+            // Form
+            .form-video{
+                display: none;
+            }
+        }
+
+        // ============== six-boxes =============
+        .six-boxes{
+            .box{
+                width: 100%;
+                padding: 3%;
+                .box-text{
+                    h2{
+                        font-size: calc($font-size-mobile + 1vw);
+                    }
+                    p{
+                        font-size: $font-size-mobile;
+                    }
+                }
+                span{
+                    font-size: $font-size-mobile;
+                    i{
+                        font-size: $font-size-mobile;
+                    }
+                }
+                // Form
+                form{
+                    margin-top: 5%;
+                    input{
+                        font-size: $font-size-mobile;
+                    }
+                    a{
+                        i{
+                            font-size: $font-size-mobile;
+                        }
+                    }
+                }
+            }
+        }
+        // =============== Middle-long-text ===============
+        .middle-long-text{
+            font-size: calc($font-size-mobile - 0.7vw);
+            margin: 10% 0;
+        }
+        // ============ Sending-receiving ============
+        .sending-receiving{
+            padding: 0 2%;
+            margin: 10% 0;
+            .sending-receiving-text{
+                p{
+                    font-size: calc($font-size-mobile + 0.7vw);
+                }
+            }
+            .sending-receiving-container{
+                .sending-receiving-left{
+                    width: 100%;
+                    div{
+                        padding: 5% 3%;
+                        a{
+                            img{
+                                width: 8vw;
+                            }
+                        }
+                        span{
+                            h2{
+                                font-size: $font-size-mobile;
+                            }
+                            p{
+                                font-size: $font-size-mobile;
+                            }
+                        }
+                        &:nth-child(1){
+                            &::before{
+                                display: none;
+                            }
+                            &::after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                // right
+                .sending-receiving-right{
+                    width: 100%;
+                    button{
+                        font-size: $font-size-mobile;
+                    }
+                }
+                
+            }
+        }
+        // =============== girl with earth ==============
+        .Sustainability{
+            margin: 10% 0;
+            padding: 0 2%;
+            a{
+                width: 100%;
+            }
+            .Sustainability-text{
+                width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+                p{
+                    font-size: calc($font-size-mobile + 1vw);
+                }
+                ul{
+                    li{
+                        font-size: $font-size-mobile;
+                    }
+                }
+                
+            }
+            button{
+                font-size: $font-size-mobile;
+            }
+        }
+        // ================= online shops ==============
+        .online-shops{
+            padding: 0 2%;
+            margin: 20% 0;
+            p{
+          font-size: calc($font-size-mobile + 1vw);
+
+            }
+            .online-shops-container{
+                flex-wrap: wrap;
+                div{
+                    p{
+                        font-size: $font-size-mobile;
+                        b{
+                            font-size: $font-size-mobile
+                        }
+                    }
+                    &:nth-child(1){
+                        width: 100%;
+                        &::after{
+                            display: none;
+                        }
+                        a{
+                            img{
+                                width: 15vw;
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        width: 100%;
+                        margin-top: 5%;
+                        flex-direction: column;
+                        align-items: center;
+                        p{
+                            text-align: center;
+                        }
+                        button{
+                            font-size: $font-size-mobile;
+                            padding: 2% 0;
+                            margin-top: 3%;
+                        }
+                    }
+                }
+            }
+        }
+
+        //   ================== Careers ===============
+
+        .careers{
+            padding: 0 2%;
+            margin: 10% 0;
+            div{
+                width: 100%;
+                h2{
+                    font-size: calc($font-size-mobile + 1vw);
+                }
+                p{
+                    font-size: $font-size-mobile;
+                }
+                .career-btns{
+                    button{
+                        font-size: $font-size-mobile;
+                    }
+                }
+            }
+            a{
+                width: 100%;
+            }
+
+        }
+        //   ======================= Related news ===============
+        .related-news{
+            padding: 0 2%;
+            margin: 10% 0;
+            .related-news-top{
+                h2{
+                    font-size: calc($font-size-mobile + 1vw);
+                }
+                span{
+                    width: 14%;
+                    font-size: $font-size-mobile;
+                    a{
+                        img{
+                            width: $font-size-mobile;
+                        }
+                    }
+                }
+            }
+            // Middle
+            .related-news-middle{
+                .related-news-middle-container{
+                    width: 100%;
+                    margin-bottom: 3%;
+                    .related-news-text{
+                        div{
+                            b{
+                                font-size: calc($font-size-mobile + 0.3vw);
+                            }
+                            p{
+                                font-size: $font-size-mobile;
+                            }
+                        }
+                        a{
+                            font-size: $font-size-mobile;
+                        }
+                    }
+                    
+                }
+            }
+            // btn
+            button{
+                font-size: $font-size-mobile;
+            }
+        }
+        // ================ customer ================
+        .customer{
+            margin: 10% 0;
+            .custuomer-container{
+                div{
+                    a{
+                        img{
+                            width: 15vw;
+                        }
+                    }
+                    p{
+                        font-size:calc( $font-size-mobile - 0.7vw);
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        // =============== INFOS ==============
+        .infos{
+            padding: 0 2%;
+            div{
+                width: 100%;
+                margin-bottom: 3%;
+                height: auto;
+                padding: 2%;
+                h2{
+                    font-size: calc($font-size-mobile + 0.3vw);
+                }
+                p{
+                    font-size: $font-size-mobile;
+                    margin: 3% 0;
+                    text-align: start;
+                }
+                a{
+                    font-size: $font-size-mobile
+                }
+            }
+        }
+
+    }
+    // =================== FOOTER =================
+    footer{
+        width: 100%;
+        margin: 0;
+        section{
+            ul{
+                width: 80%;
+                li{
+                    a{
+                        font-size: calc($font-size-mobile - 1vw);
+                    }
+                }
+            }
+            // ======== footer right ===========
+        .footer-right{
+            div{
+                b{
+                    font-size: calc($font-size-mobile - 1vw );
+                }
+                span{
+                    i{
+                        font-size: $font-size-mobile;
+                    }
+                }
+                div{
+                    a{
+                        img{
+                            width: 98%;
+                        }
+                    }
+                }
+                .cookies{
+                    font-size:calc($font-size-mobile - 1vw ) ;
+                }
+            }
+        }
+        }
+
+        // ========== footer bottom ============
+        .footer-bottom{
+            .footer-logo{
+                a{
+                    font-size: calc($font-size-mobile - 1vw );
+                    img{
+                        width: 8vw;
+                    }
+                }
+            }
+            div{
+                
+                a{
+                    font-size: calc($font-size-mobile - 1vw );
+                }
+                span{
+                    font-size:calc($font-size-mobile - 1vw );
+                }
+            }
+        }
+        .en{
+            a{
+                font-size: calc($font-size-mobile - 1vw );
+            }
+        }
+    }
+}
