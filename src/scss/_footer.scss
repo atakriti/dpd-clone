@@ -23,11 +23,15 @@ footer{
                 text-decoration: none;
                 color: black;
                 font-size: calc($font-size - 0.1vw);
+                &:hover{
+                    color: $red;
+                }
                 &:first-child{
                    
                     margin-bottom: 7%;
                 }
             }
+            
         }
     }
     // ================ footer right ===============
@@ -49,6 +53,11 @@ footer{
             i{
                 font-size: calc($font-size + 0.6vw);
                 color: $red;
+                cursor: pointer;
+                &:hover{
+                    color: $gray;
+                    transform: scale(1.2);
+                }
             }
         }
         div{
@@ -60,6 +69,9 @@ footer{
                 width: 100%;
                 img{
                     width: 90%;
+                    &:hover{
+                    transform: scale(1.2);
+                    }
                 }
             }
         }
@@ -69,6 +81,9 @@ footer{
             color: black;
             font-size: calc($font-size - 0.1vw);
             margin-top: 5%;
+            &:hover{
+                color: $red;
+            }
         }
     }
     }
@@ -100,6 +115,9 @@ footer{
             font-size: calc($font-size - 0.2vw);
             text-decoration: none;
             color: $gray;
+            &:hover{
+                color: $red;
+            }
            }
            span{
                font-size: $font-size;
@@ -115,9 +133,13 @@ footer{
         text-decoration: none;
         font-size: calc($font-size - 0.1vw);
         color: black;
+        i{
+            margin-left: 1%;
+        }
+        &:hover{
+            color: $red;
+        }
     }
-    i{
-        margin-left: 1%;
-    }
+   
 }
 }

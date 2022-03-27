@@ -31,6 +31,10 @@ main{
                     font-size: $font-size;
                     margin-left: 1%;
                 }
+                &:hover{
+                    color: $red;
+                    
+                }
             }
         }
         .form-video{
@@ -67,6 +71,12 @@ main{
                         i{
                           font-size: $font-size;                            
                         }
+                        &:hover{
+                            background-color: $red;
+                            i{
+                                color: white;
+                            }
+                        }
                     }
                 }
                 a{
@@ -77,6 +87,9 @@ main{
                         i{
                             font-size: $font-size;
                         }
+                    }
+                    &:hover{
+                        color: $red;
                     }
                 }
             }
