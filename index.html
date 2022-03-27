@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="icon" href="./images/icon.png">
+    <title>DPD-Clone</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="logo"><img src="./images/logo.svg" alt="" /></a>
+        <ul>
+          <li><a href="#sendingId">Sending parcels</a></li>
+          <li><a href="#shopsId">Online Shops</a></li>
+          <li><a href="#relatedId">Related News</a></li>
+          <li><a href="#aboutId">About</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="#" class="search"
+          ><img src="./images/magnifier.svg" alt=""
+        /></a>
+        <a onclick="menu()" href="#" class="menu"
+          ><img src="./images/burger-menu.svg" alt=""
+        /></a>
+      </div>
+    </header>
+    
+    <!-- ============== main video ============ -->
+    <main onclick="main()">
+      <!-- ============ menu mobile =============== -->
+    <div id="list" class="menu-mobile">
+      <ul>
+        <li><a onclick="listBtn()" href="#sendingId">Sending parcels</a></li>
+        <li><a onclick="listBtn()" href="#shopsId">Online Shops</a></li>
+        <li><a onclick="listBtn()" href="#relatedId">Related News</a></li>
+        <li><a onclick="listBtn()" href="#aboutId">About</a></li>
+        <li><a onclick="back()" href="#">Back to main</a></li>
+      </ul>
+    </div>
+      <!-- ================== Video =============== -->
+      <div class="video">
+        <video autoplay loop muted>
+          <source src="./images/main-bg.mp4" />
+        </video>
+        <div class="video-text">
+          <p>No more missed parcels</p>
+          <h1>give us your deposit okay</h1>
+          <a href="#"
+            >Provide a deposit okay
+            <span><i class="fa-solid fa-angle-right"></i></span
+          ></a>
+        </div>
+        <div class="form-video">
+          <div>
+            <p>Where is my parcel?</p>
+            <form action="">
+              <input type="text" name="search" id="1" />
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </form>
+            <a href="#"
+              >Search with parcel reference
+              <span><i class="fa-solid fa-angle-right"></i></span
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- ================== six-boxes =============== -->
+      <div class="six-boxes">
+        <!-- one -->
+        <div class="box">
+          <div class="box-text">
+            <h2>Send parcel now</h2>
+            <p>
+              Ship parcels simply and conveniently. Drop them off at a parcel
+              shop or have them picked up.
+            </p>
+          </div>
+          <span
+            ><b> From 4.00 €</b><i class="fa-solid fa-angle-right"></i
+          ></span>
+        </div>
+        <!-- two -->
+        <div class="box">
+          <div class="box-text">
+            <h2>Offer for business customers</h2>
+            <p>
+              We will be happy to provide you with a highly competitive offer
+              for your parcel shipping, of course without obligation.
+            </p>
+          </div>
+          <span>More details</span>
+        </div>
+        <!-- Three -->
+        <div class="box">
+          <div class="box-text">
+            <h2>Log in / register</h2>
+            <p>Send, receive and return parcels with myDPD.</p>
+          </div>
+          <span><b>To myDPD</b><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+        <!-- Four -->
+        <div class="box">
+          <div class="box-text">
+            <h2>Find parcel shop</h2>
+            <p>Find a nearby Pickup parcelshop</p>
+          </div>
+          <form action="">
+            <input
+              placeholder="Postcode, town, address"
+              type="text"
+              name="text"
+              id="2"
+            />
+            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+          </form>
+        </div>
+        <!-- Five -->
+        <div class="box">
+          <div class="box-text">
+            <h2>Support</h2>
+            <p>How can we help you?</p>
+          </div>
+          <span
+            ><b>Help and FAQs</b><i class="fa-solid fa-angle-right"></i
+          ></span>
+        </div>
+        <!-- Six -->
+        <div class="box">
+          <div class="box-text">
+            <h2>dpd DRIVER'S RADIO</h2>
+            <p>
+              Best sounds for on the road. <br />
+              In cooperation with DPD Germany.
+            </p>
+          </div>
+          <span><b>Listen now</b><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+      </div>
+      <!-- ============= middle long text ================= -->
+      <div class="middle-long-text">
+        <p>
+          DPD is your partner when it comes to parcel shipping - within Germany
+          and internationally. Thanks to our 7,500 parcel shops we are always
+          just around the corner. Send a parcel now or request a personal offer,
+          of course without commitment.
+        </p>
+      </div>
+      <!-- ==================== sending-receiving ============= -->
+      <div id="sendingId" class="sending-receiving">
+        <div class="sending-receiving-text">
+          <p>
+            Sending, receiving and returning parcels - now simpler than ever
+          </p>
+        </div>
+        <div class="sending-receiving-container">
+          <div class="sending-receiving-left">
+            <!-- one -->
+            <div>
+              <a href="#"><img src="./images/1.svg" alt="" /></a>
+              <span>
+                <h2>Sending parcels</h2>
+                <p>
+                  Whether your parcels are large or small, shipped privately or
+                  for business purposes, DPD always has the ideal solution for
+                  both domestic and international shipping.
+                </p>
+              </span>
+            </div>
+            <!-- two -->
+            <div>
+              <a href="#"><img src="./images/2.svg" alt="" /></a>
+              <span>
+                <h2>Receiving parcels</h2>
+                <p>
+                  Won't be at home when we arrive? No problem. Redirect your
+                  parcels or register a delivery preference: deposit okay,
+                  delivery to a parcel shop or to a parcel box.
+                </p>
+              </span>
+            </div>
+            <!-- three -->
+            <div>
+              <a href="#"><img src="./images/3.svg" alt="" /></a>
+              <span>
+                <h2>Returning parcels</h2>
+                <p>
+                  The parcel has to be sent back? As a shipper you can use our
+                  returns management to offer your customers an efficient and
+                  individual service for their returns. It's child play with our
+                  returns at the tap of a finger.
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="sending-receiving-right">
+            <a href="#"><img src="./images/4.jpg" alt="" /></a>
+            <button>More details</button>
+          </div>
+        </div>
+      </div>
+      <!-- ============= Sustainability ============== -->
+      <div class="Sustainability">
+        <a href="#"><img src="./images/5.png" alt="" /></a>
+        <div class="Sustainability-text">
+          <p>Sustainability is more than just green</p>
+          <ul>
+            <li>We attach great importance to green delivery</li>
+            <li>
+              We are conducting research into models for intelligent city
+              logistics as well as improving air quality in cities
+            </li>
+            <li>
+              We are aware of our social responsibility and proud of our
+              diversity
+            </li>
+          </ul>
+          <button>Find out more</button>
+        </div>
+      </div>
+      <!-- ================= online shops ============ -->
+      <div id="shopsId" class="online-shops">
+        <p>For online shops and e-commerce businesses</p>
+        <div class="online-shops-container">
+          <!-- the first one -->
+          <div>
+            <a href="#"><img src="./images/6.png" alt="" /></a>
+            <p>
+              <b>Straight from the order to the dispatch of the goods. </b>
+              <br />
+              Obtain comprehensive information about the seamless integration of
+              our parcel shipping into the checkout process of your web shop.
+            </p>
+          </div>
+          <!-- the second one -->
+          <div>
+            <p>
+              Find out all about our interfaces, plug-ins and client solutions.
+            </p>
+            <button>Discover now</button>
+          </div>
+        </div>
+      </div>
+      <!-- ============= Career ============ -->
+      <div class="careers">
+        <div>
+          <h2>Careers with DPD</h2>
+          <p>
+            Plan your course for the future. We are looking for colleagues who
+            are just as ambitious as we are. Get to know us as a company and
+            discover your career possibilities with DPD.
+          </p>
+          <div class="career-btns">
+            <button>Current job vacancies</button>
+            <button>More details</button>
+          </div>
+        </div>
+
+        <a href="#"><img src="./images/7.jpg" alt=""></a>
+      </div>
+      <!-- =============== Related news ============= -->
+      <div id="relatedId" class="related-news">
+        <!-- top -->
+        <div class="related-news-top">
+          <h2>Related News</h2>
+          <span>Filter <a href="#"><img src="./images/filter.svg" alt=""></a></span>
+        </div>
+        <!-- middle -->
+        <div class="related-news-middle">
+          <!-- first -->
+          <div class="related-news-middle-container">
+            <div class="related-news-text">
+              <div>
+                <b>Video <br> 9.March 2022</b>
+                <p>Sustainable "right up to the front door": DPD acquires of 150 eSprinters from Mercedes-Benz Vans</p>
+              </div>   
+                  <a href="#"><p>Show more</p><i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <a href="#"><img src="./images/8.jpg" alt=""></a>
+          </div>
+          <!-- second -->
+          <div class="related-news-middle-container">
+            <div class="related-news-text">
+             <div>
+                <b>Update <br> 1.March 2022</b>
+                <p>Latest information on the Ukraine crisis</p>
+             </div>
+             <a href="#"><p>Show more</p><i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <a href="#"><img src="./images/9.jpg" alt=""></a>
+          </div>
+
+        </div>
+        <button>Show more</button>
+      </div>
+      <!-- ================ what customer say ============= -->
+      <div  class="customer">
+        <div class="custuomer-container">
+          <!-- one -->
+          <div>
+            <a href="#"><img src="./images/SodaStream.png" alt=""></a>
+            <p>"DPD's CO2-neutral parcel shipping is a perfect match to our resource-saving company.“ </p>
+          </div>
+          <!-- two -->
+          <div>
+            <a href="#"><img src="./images/Tschibo.png" alt=""></a>
+            <p>"The high delivery quality of our products is the basis for our longstanding close cooperation.“ </p>
+          </div>
+          <!-- three -->
+          <div>
+            <a href="#"><img src="./images/Velux.png" alt=""></a>
+            <p>„The flexibility of DPD's services enables us to find solutions together which are precisely tailored to our requirements.“ </p>
+          </div>
+          <!-- four -->
+          <div>
+            <a href="#"><img src="./images/Wuerth.png" alt=""></a>
+            <p>"High levels of quality and flexibility, and constant readiness to innovate.“ </p>
+          </div>
+          <!-- five -->
+          <div>
+            <a href="#"><img src="./images/home24.png" alt=""></a>
+            <p> 
+              "Predict now makes buying furniture even simpler for our customers.“ </p>
+          </div>
+        </div>
+      </div>
+      <div class="infos">
+        <!-- one -->
+        <div>
+          <h2>Offer for business customers</h2>
+          <p>We will be happy to provide you with a highly competitive offer for your parcel shipping, of course without obligation.</p>
+          <a href="#"><b>Request offer now</b><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <!-- two -->
+        <div>
+          <h2>Corona: the latest information</h2>
+          <p>Here you will find information from DPD on the latest coronavirus developments.</p>
+          <a href="#"><b>Learn more</b><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <!-- three -->
+        <div>
+          <h2>Tracking for business customers</h2>
+          <p>Parcel tracking by parcel number or parcel reference</p>
+          <a href="#"><b>Track parcels</b><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+      </div>
+    </main>
+    <!-- =================== FOOTER ===================== -->
+    <footer id="aboutId">
+     <section>
+      <ul>
+        <!-- one -->
+        <li>
+          <a href="#"><b>Sending parcels</b></a>
+          <a href="#">Offer for business customers          </a>
+          <a href="#">Send a parcel now          </a>
+          <a href="#">Prices for parcel shipping          </a>
+          <a href="#">Commercial Invoice          </a>
+        </li>
+        <!-- two -->
+        <li>
+            <a href="#"><b>Receiving parcels </b></a>
+            <a href="#">Parcel tracking            </a>
+            <a href="#">Delivery preferences            </a>
+          </li>
+        <!-- three -->
+        <li>
+        <a href="#"><b>Returning parcels</b></a>
+            <a href="#">Returns management            </a>
+            <a href="#">Return a parcel            </a>
+          </li>
+        <!-- four -->
+        <li>
+          <a href="#"><b>Our company</b></a>
+            <a href="#">DPD News            </a>
+            <a href="#">Innovation            </a>
+            <a href="#">Press            </a>
+          </li>
+        <!-- five -->
+        <li>
+          <a href="#"><b>Careers at DPD</b></a>
+          <a href="#">Current job offers          </a>
+          <a href="#">Tips for applicants          </a>
+          <a href="#">Delivery driver wanted          </a>
+        </li>
+        <!-- six -->
+        <li>
+          <a href="#"><b>Find a parcel shop</b></a>
+          <a href="#">Pickup parcelshops          </a>
+          <a href="#">Become a parcelshop          </a>
+        </li>
+        <!-- seven -->
+        <li>
+         <a href="#"><b>Support</b></a>
+          <a href="#">Terms of transport          </a>
+          <a href="#">FAQs          </a>
+        </li>
+        <!-- eight -->
+        <li>
+         <a href="#"><b>Become a system partner</b></a>
+        </li>
+        <!-- nine -->
+        <li>
+          <a href="#"><b>E-commerce          </b></a>
+          <a href="#">IT link-up          </a>
+          <a href="#">Developers          </a>
+        </li>
+        <!-- ten -->
+        <li>
+          <a href="#"><b>myDPD          </b></a>
+          <a href="#">Log in / register          </a>
+        </li>
+      </ul>
+      <div class="footer-right">
+        <!-- one -->
+        <div>
+          <b>Social Media</b>
+          <span>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+        </div>
+        <!-- two -->
+        <div>
+          <b>Download The App</b>
+          <div>
+            <a href="#"><img src="./images/app-store-logo.png" alt=""></a>
+            <a href="#"><img src="./images/google-play.png" alt=""></a>
+          </div>
+          <a class="cookies" href="#">Cookies</a>
+        </div>
+      </div>
+     </section>
+      <hr>
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <a href="#"><img src="./images/logo.svg" alt="">group © 2022 DPD</a>
+        </div>
+        <!-- two -->
+        <div>
+          <a href="#">Legal notice / Dispute settlement</a>
+          <span>|</span>
+          <a href="#">Legal notices</a>
+          <span>|</span>
+          <a href="#">GTC</a>
+          <span>|</span>
+          <a href="#">Data protection</a>
+          <span>|</span>
+          <a href="#">Security</a>
+          <span>|</span>
+          <a href="#">DPDgroup</a>
+        </div>
+      </div>
+      <div class="en">
+        <a href="#">English<i class="fa-solid fa-angle-down"></i></a>
+      </div>
+    </footer>
+    <script src="./Javascript/main.js"></script>
+  </body>
+</html>
