@@ -838,6 +838,10 @@ footer .en a:hover {
   header nav .logo img {
     width: 9.5vw;
   }
+  header nav .logo img:hover {
+    filter: grayscale(0);
+    transform: scale(0);
+  }
   header nav ul li a {
     font-size: 2vw;
   }
