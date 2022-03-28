@@ -9,6 +9,11 @@
             .logo{
                 img{
                     width: calc($font-size-mobile + 7vw);
+                    &:hover{
+                        filter: grayscale(0);
+                        transform: scale(0);
+                    }
+                    
                 }
             }
             ul{
