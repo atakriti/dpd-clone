@@ -53,7 +53,7 @@ LinkedIn: [your linkedIn](#)
 
 ### Used Tools
 
-- [icons](https://)
+- [icons](https://https://fontawesome.com/)
 - [npm](https://www.npmjs.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
