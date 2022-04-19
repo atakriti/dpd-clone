@@ -1,11 +1,12 @@
+list.style.display = "none"
 function menu() {
     let element = document.getElementById("list");
     if (element.style.display == "none") {
         element.style.display = "block";
-        element.style.transform = "translate(0)";
+        element.style.transform = "translate(0)",setTimeout(3000);
+        
     } else {
-        element.style.display = "none";
-         
+        element.style.display = "none";         
     }
 }
 

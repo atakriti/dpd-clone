@@ -876,7 +876,7 @@ footer .en a:hover {
     flex-direction: column;
     overflow: scroll;
     transform: translateX(100%);
-    transition: 1s;
+    transition: 2s;
   }
   main .menu-mobile ul {
     height: 100%;
